@@ -192,6 +192,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\FinanceItemsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PlansController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Database\AppContext.cs" />
     <Compile Include="Global.asax.cs">
