@@ -17,5 +17,7 @@ namespace Chronos.Database
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<FinanceItem> FinanceItems { get; set; }
+        public virtual  DbSet<Plan> Plans { get; set; }
+        public virtual  DbSet<RecurrencePlan> RecurrencePlans { get; set; }
     }
 }

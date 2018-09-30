@@ -1,0 +1,40 @@
+<div class="container">
+  <form (ngSubmit) = "onSubmit(plan)" #plan = "ngForm">
+    <div class="form-group">
+      <label for="name">Plan's name</label>
+      <input type="text" 
+      class="form-control" 
+      id="name" 
+      placeholder="Monthly expenses..."
+      ngModel
+      name="name"
+      required>
+    </div>
+    <div class="form-group">
+      <label for="expirationDate">Expiration date</label>
+        <input class="form-control" 
+        type="date" 
+        id="expirationDate"
+        ngModel
+        name="expirationDate"
+        required>
+    </div>
+    <div class="form-group">
+      <label for="repeater">When to repeat</label>
+      <select class="form-control" id="repeater" ngModel name ="repeater" required>
+        <option value= '1'>Place enum from backend here</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="budget">Expected budget</label>
+      <input type="number" 
+      class="form-control" 
+      id="budget" 
+      ngModel
+      name="budget">
+    </div>
+    <button class="btn btn-primary" type="submit" [disabled] = "!plan.valid">Submit</button>
+    <!-- <button class="btn btn-danger" type="reset" (click) ="onReset()">Reset</button> -->
+
+  </form>
+</div>

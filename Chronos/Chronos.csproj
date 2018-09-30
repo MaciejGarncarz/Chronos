@@ -201,8 +201,18 @@
     <Compile Include="Migrations\201809132047122_IntitialMigration.Designer.cs">
       <DependentUpon>201809132047122_IntitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809301900058_PlanAndReccurencePlan.cs" />
+    <Compile Include="Migrations\201809301900058_PlanAndReccurencePlan.Designer.cs">
+      <DependentUpon>201809301900058_PlanAndReccurencePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809301902178_SeedingRecurrencePlans.cs" />
+    <Compile Include="Migrations\201809301902178_SeedingRecurrencePlans.Designer.cs">
+      <DependentUpon>201809301902178_SeedingRecurrencePlans.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FinanceItem.cs" />
+    <Compile Include="Models\Plan.cs" />
+    <Compile Include="Models\RecurrencePlan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -276,6 +286,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201809132047122_IntitialMigration.resx">
       <DependentUpon>201809132047122_IntitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809301900058_PlanAndReccurencePlan.resx">
+      <DependentUpon>201809301900058_PlanAndReccurencePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809301902178_SeedingRecurrencePlans.resx">
+      <DependentUpon>201809301902178_SeedingRecurrencePlans.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
